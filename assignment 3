@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple CSS Box Model demonstration with styled sections and layout.">
+    <title>CSS Box Model Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Box Model Demonstration</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Introduction</h2>
+            <p>This section demonstrates how padding, borders, and margins work together in the CSS Box Model. You can see the effect of each property visually.</p>
+        </section>
+
+        <section class="card highlight">
+            <h2>Box Model Parts</h2>
+            <ul>
+                <li><strong>Content:</strong> The text, image, or other media inside the box.</li>
+                <li><strong>Padding:</strong> Space between content and the border.</li>
+                <li><strong>Border:</strong> The edge around the element.</li>
+                <li><strong>Margin:</strong> Space between this element and other elements.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Styled Button</h2>
+            <button class="btn-primary">Click Me</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CSS Practice Project</p>
+    </footer>
+
+</body>
+</html>
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main container styling */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Card styling to demonstrate Box Model */
+.card {
+    background-color: #fff;
+    margin: 20px 0;       /* Outside spacing */
+    padding: 20px;        /* Inside spacing */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.highlight {
+    background-color: #fffae5;
+    border-color: #f4b400;
+}
+
+/* List styling inside card */
+.card ul {
+    padding-left: 20px;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;    /* Inside spacing */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
